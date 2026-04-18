@@ -47,6 +47,23 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "dark-card": {
+          DEFAULT: "hsl(var(--dark-card))",
+          foreground: "hsl(var(--dark-card-foreground))",
+          inner: "hsl(var(--dark-card-inner))",
+        },
+        "tag-green": {
+          bg: "hsl(var(--tag-green-bg))",
+          fg: "hsl(var(--tag-green-fg))",
+        },
+        "tag-red": {
+          bg: "hsl(var(--tag-red-bg))",
+          fg: "hsl(var(--tag-red-fg))",
+        },
+        "tag-teal": {
+          bg: "hsl(var(--tag-teal-bg))",
+          fg: "hsl(var(--tag-teal-fg))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -60,8 +77,14 @@ export default {
       },
       borderRadius: {
         lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        md: "calc(var(--radius) - 4px)",
+        sm: "calc(var(--radius) - 8px)",
+        "2xl": "1.5rem",
+        "3xl": "2rem",
+      },
+      boxShadow: {
+        card: "0 1px 2px hsl(180 25% 8% / 0.04), 0 8px 24px -8px hsl(180 25% 8% / 0.06)",
+        soft: "0 2px 12px -2px hsl(180 25% 8% / 0.05)",
       },
       keyframes: {
         "accordion-down": {
